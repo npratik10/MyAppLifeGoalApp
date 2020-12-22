@@ -249,12 +249,12 @@ def main():
    - Add month file for each month entry
    Example:
    pratik_spend_plan
-      - 2019
+      - 2019_folder
         jan_entries.txt
         feb_entries.txt
         :
         dec_entries.txt
-      - 2020
+      - 2020_folder
         jan_entries.txt
         feb_entries.txt
         :
