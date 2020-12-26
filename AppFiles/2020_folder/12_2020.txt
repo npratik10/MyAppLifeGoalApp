@@ -30,3 +30,9 @@ Type:Necessity(1) SubType:bills(4) Value:35
 Type:Necessity(1) SubType:one_time(5) Value:60
 Type:Necessity(1) SubType:grocery_veggies(1) Value:9
 Type:Car(4) SubType:registration(4) Value:321
+Type:Misc(5) SubType:one_time(8) Value:102
+Type:Entertainment(2) SubType:food(1) Value:15
+Type:Misc(5) SubType:one_time(8) Value:119
+Type:Necessity(1) SubType:grocery_veggies(1) Value:29
+Type:Entertainment(2) SubType:food(1) Value:34
+
