@@ -1,0 +1,3 @@
+Type:Misc(5) SubType:pitu_gift(6) Value:50 Detail:pitu_gift_limit
+Type:Misc(5) SubType:others_gift(7) Value:300 Detail:mom_gift
+Type:Misc(5) SubType:black_friday(3) Value:450 Detail:bfs

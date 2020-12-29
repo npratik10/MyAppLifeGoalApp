@@ -39,20 +39,23 @@ def generate_report(is_yearly_report, year, month):
         list_of_files = os.listdir(folder_path)
         print(list_of_files)
         for files in list_of_files:
-            file_path = folder_path + '\\' + files
-            fh = open(file_path, "r")
-            for line in fh:
-                #print(line)
-                line_space_split = line.split()
-                #print(line_space_split)
-                entry_val = []
-                for entries in line_space_split:
-                    line_colon_split = entries.split(':')
-                    #print(line_colon_split)
-                    entry_val.append(line_colon_split[1].split('(')[0])
-                #print(entry_val)
-                report_dict[entry_val[0]][entry_val[1]] = report_dict[entry_val[0]][entry_val[1]] + int(entry_val[2])
-            fh.close()
+            if "limit" in files:
+                continue
+            else:
+                file_path = folder_path + '\\' + files
+                fh = open(file_path, "r")
+                for line in fh:
+                    #print(line)
+                    line_space_split = line.split()
+                    #print(line_space_split)
+                    entry_val = []
+                    for entries in line_space_split:
+                        line_colon_split = entries.split(':')
+                        #print(line_colon_split)
+                        entry_val.append(line_colon_split[1].split('(')[0])
+                    #print(entry_val)
+                    report_dict[entry_val[0]][entry_val[1]] = report_dict[entry_val[0]][entry_val[1]] + int(entry_val[2])
+                fh.close()
         is_print_report = True
     elif is_yearly_report == 'N' or is_yearly_report == 'n':
         print("monthly")
@@ -208,6 +211,77 @@ def write_entry(etype, esubtype, val, detail = 'NA'):
         fh.close()
     else:
         os.mkdir(folder_path)
+        print("Folder Created")
+        file_path = folder_path + '\\' + file_name
+        fh = open(file_path, "a+")
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
+        fh.close()
+
+def write_limit_entry(is_yearly_report, year, month, etype, esubtype, val, detail = 'NA'):
+    print("Write limit entries")
+    file_name = '_limit.txt'
+    folder_path = path + year + '_folder'
+
+    if is_yearly_report == 'Y' or is_yearly_report == 'y':
+        print("yearly")
+        file_name = year + '_limit.txt'
+        print("folder = %s, file = %s " % (folder_path, file_name))
+    elif is_yearly_report == 'N' or is_yearly_report == 'n':
+        print("monthly")
+        file_name = month + '_' + year + '_limit.txt'
+        print("folder = %s, file = %s " % (folder_path, file_name))
+    else:
+        print("Invalid Input")
+        return
+
+    etype_name = get_entry_type(etype)
+    if etype_name == 'Invalid':
+        print("\nInvalid Entry Name")
+        return
+
+    esubtype_name = get_entry_subtype(etype, esubtype)
+    if esubtype_name == 'Invalid':
+        print("\nInvalid Subentry Name")
+        return
+
+    if os.path.isdir(folder_path):
+        print("Folder Exist")
+        file_path = folder_path + '\\' + file_name
+        if os.path.exists(file_path):
+            print("Files Exist")
+            fh = open(file_path, "r")
+            list_of_lines = fh.readlines()
+            fh.close()
+            index = 0
+            entry_found = False
+            print(list_of_lines)
+            for lines in list_of_lines:
+                line_space_split = lines.split()
+                entry_val = []
+                #print(line_space_split)
+                for entries in line_space_split:
+                    line_colon_split = entries.split(':')
+                    entry_val.append(line_colon_split[1].split('(')[0])
+                #print(entry_val)
+                if entry_val[0] == etype_name and entry_val[1] == esubtype_name:
+                    entry_found = True
+                    break
+                index = index + 1
+            entry_string = "Type:{etn}({et}) SubType:{estn}({est}) Value:{v} Detail:{d}\n".format(etn = etype_name, et = etype, estn = esubtype_name, est = esubtype, v = val, d = detail)
+            if entry_found:
+                list_of_lines[index] = entry_string
+            else:
+                list_of_lines.append(entry_string)
+            fh = open(file_path, "w")
+            fh.writelines(list_of_lines)
+            fh.close()
+        else:
+            print("Files does not Exist")
+            fh = open(file_path, "a+")
+            fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
+            fh.close()
+    else:
+        print("Folder for limit does not exist. Create an entry for the year")
     
 
 def print_entry_options():
@@ -242,6 +316,17 @@ def main():
             report_year = input("\nEnter year: ")
             report_month = input("\nEnter month(1-12): ")
             generate_report(is_yearly_report, report_year, report_month)
+        elif option == '4':
+            is_yearly_limit = input("\nSet Yearly Limit(Y/N)(y/n): ")
+            limit_year = input("\nEnter year: ")
+            limit_month = input("\nEnter month(1-12): ")
+            print("\nSelect the entry to set limits:")
+            print_entry_options()
+            entry_type = input("\nEnter Type: ")
+            entry_subtype = input("\nEnter Subtype: ")
+            value = input("\nEnter Value: ")
+            detail = input("\nEnter Comment: ")
+            write_limit_entry(is_yearly_limit, limit_year, limit_month, entry_type, entry_subtype, value, detail)
             
 
 '''
