@@ -23,7 +23,7 @@ def generate_report(is_yearly_report, year, month):
         "Entertainment":{"food": 0, "movies": 0, "party": 0, "video_stream": 0, "others": 0},
         "Vacation":{"hotel": 0, "car_rent": 0, "gas": 0, "tickets": 0, "food": 0},
         "Car":{"maintainence": 0, "insurance": 0, "gas": 0, "registration": 0, "bills": 0},
-        "Misc":{"makeup": 0, "home_improve": 0, "black_friday": 0, "clothes": 0, "others": 0, "pitu_gift": 0, "others_gift": 0, "one_time": 0, "celebration": 0},
+        "Misc":{"makeup": 0, "home_improve": 0, "black_friday": 0, "clothes": 0, "others": 0, "pitu_gift": 0, "others_gift": 0, "one_time": 0, "celebration": 0, "medical": 0},
         "Payments":{"stocks": 0, "credit_card_payment": 0, "investments": 0},
         "Deposit":{"pay": 0, "bonus": 0, "tax_ret": 0, "others": 0}
     }
@@ -161,6 +161,8 @@ def get_entry_subtype(etype, esubtype):
             return 'one_time'
         elif esubtype == '9':
             return 'celebration'
+        elif esubtype == '10':
+            return 'medical'
     elif etype == '6':
         if esubtype == '1':
             return 'stocks'
@@ -179,7 +181,7 @@ def get_entry_subtype(etype, esubtype):
             return 'others'
     return 'Invalid'
 
-def write_entry(etype, esubtype, val):
+def write_entry(etype, esubtype, val, detail = 'NA'):
     today = date.today()
     folder_name = today.strftime("%Y")
     file_name = today.strftime("%m_%Y")
@@ -202,7 +204,7 @@ def write_entry(etype, esubtype, val):
         print("Folder Exist")
         file_path = folder_path + '\\' + file_name
         fh = open(file_path, "a+")
-        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s\n" % (etype_name, etype, esubtype_name, esubtype, val))
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
         fh.close()
     else:
         os.mkdir(folder_path)
@@ -213,7 +215,7 @@ def print_entry_options():
     print('\n 2: Entertainment \n {1: food, 2: movies, 3: party, 4: video_stream, 5: others}')
     print('\n 3: Vacation \n {1: hotel, 2: car_rent, 3: gas, 4: tickets, 5: food}')
     print('\n 4: Car \n {1: maintainence, 2: insurance, 3: gas, 4: registration, 5: bills}')
-    print('\n 5: Misc. \n {1: makeup, 2: home_improve, 3: black_friday, 4: clothes, 5: others, 6: pitu_gift, 7: others_gift, 8: one_time, 9: celebration}')
+    print('\n 5: Misc. \n {1: makeup, 2: home_improve, 3: black_friday, 4: clothes, 5: others, 6: pitu_gift, 7: others_gift, 8: one_time, 9: celebration, 10: medical}')
     print('\n 6: Payments \n {1: stocks, 2: credit_card_payment, 3: investments}')
     print('\n 7: Deposit \n {1: pay, 2: bonus, 3: tax_ret, 4: others}')
 
@@ -233,7 +235,8 @@ def main():
             entry_type = input("\nEnter Type: ")
             entry_subtype = input("\nEnter Subtype: ")
             value = input("\nEnter Value: ")
-            write_entry(entry_type, entry_subtype, value)
+            detail = input("\nEnter Comment: ")
+            write_entry(entry_type, entry_subtype, value, detail)
         elif option == '3':
             is_yearly_report = input("\nNeed Yearly Report(Y/N)(y/n): ")
             report_year = input("\nEnter year: ")

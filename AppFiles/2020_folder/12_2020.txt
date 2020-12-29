@@ -35,4 +35,4 @@ Type:Entertainment(2) SubType:food(1) Value:15
 Type:Misc(5) SubType:one_time(8) Value:119
 Type:Necessity(1) SubType:grocery_veggies(1) Value:29
 Type:Entertainment(2) SubType:food(1) Value:34
-
+Type:Misc(5) SubType:medical(10) Value:34 Detail:pregnancy_test
