@@ -6,26 +6,48 @@ print("Hello! Spending App")
 
 path = "F:\\MyAppLifeGoalApp\\AppFiles\\"
 
-def print_report(report_dict):
+approaching_yearly_limit_diff = 100
+approaching_monthly_limit_diff = 100
+
+def print_report(report_dict, is_yearly_report):
     type_keys = report_dict.keys()
     for t in type_keys:
         print('\n')
         print(t + ':')
         total = 0
         for st in report_dict[t]:
-            print(st + ' = %d' % (report_dict[t][st]))
-            total = total + report_dict[t][st]
+            if is_yearly_report == 'Y' or is_yearly_report == 'y':
+                if report_dict[t][st][2] == -1:
+                    print(st + ' = %d, yearly limit = Not Set' % (report_dict[t][st][0]))
+                else:
+                    alert_string = ""
+                    if report_dict[t][st][2] - report_dict[t][st][0] < approaching_yearly_limit_diff:
+                        alert_string = ", ALERT : Approachin yearly limit: {diff}".format(diff = report_dict[t][st][2] - report_dict[t][st][0])
+                    print(st + ' = %d, yearly limit = %d%s' % (report_dict[t][st][0], report_dict[t][st][2], alert_string))
+            else:
+                if report_dict[t][st][1] == -1:
+                    print(st + ' = %d, monthly limit = Not Set' % (report_dict[t][st][0]))
+                else:
+                    alert_string = ""
+                    if report_dict[t][st][1] - report_dict[t][st][0] < approaching_monthly_limit_diff:
+                        alert_string = ", ALERT : Approachin monthly limit: {diff}".format(diff = report_dict[t][st][1] - report_dict[t][st][0])
+                    print(st + ' = %d, monthly limit = %d%s' % (report_dict[t][st][0], report_dict[t][st][1], alert_string))
+            total = total + report_dict[t][st][0]
         print('Total %s: %d' % (t, total))
 
 def generate_report(is_yearly_report, year, month):
+    # [entry1, entry2, entry3]
+    # entry1 - entry value
+    # entry2 - entry monthly report
+    # entry3 - entry yearly report
     report_dict = {
-        "Necessity":{"grocery_veggies": 0, "grocery_meat": 0, "rent": 0, "bills": 0, "one_time": 0},
-        "Entertainment":{"food": 0, "movies": 0, "party": 0, "video_stream": 0, "others": 0},
-        "Vacation":{"hotel": 0, "car_rent": 0, "gas": 0, "tickets": 0, "food": 0},
-        "Car":{"maintainence": 0, "insurance": 0, "gas": 0, "registration": 0, "bills": 0},
-        "Misc":{"makeup": 0, "home_improve": 0, "black_friday": 0, "clothes": 0, "others": 0, "pitu_gift": 0, "others_gift": 0, "one_time": 0, "celebration": 0, "medical": 0},
-        "Payments":{"stocks": 0, "credit_card_payment": 0, "investments": 0},
-        "Deposit":{"pay": 0, "bonus": 0, "tax_ret": 0, "others": 0}
+        "Necessity":{"grocery_veggies": [0, -1, -1], "grocery_meat": [0, -1, -1], "rent": [0, -1, -1], "bills": [0, -1, -1], "one_time": [0, -1, -1]},
+        "Entertainment":{"food": [0, -1, -1], "movies": [0, -1, -1], "party": [0, -1, -1], "video_stream": [0, -1, -1], "others": [0, -1, -1]},
+        "Vacation":{"hotel": [0, -1, -1], "car_rent": [0, -1, -1], "gas": [0, -1, -1], "tickets": [0, -1, -1], "food": [0, -1, -1]},
+        "Car":{"maintainence": [0, -1, -1], "insurance": [0, -1, -1], "gas": [0, -1, -1], "registration": [0, -1, -1], "bills": [0, -1, -1]},
+        "Misc":{"makeup": [0, -1, -1], "home_improve": [0, -1, -1], "black_friday": [0, -1, -1], "clothes": [0, -1, -1], "others": [0, -1, -1], "pitu_gift": [0, -1, -1], "others_gift": [0, -1, -1], "one_time": [0, -1, -1], "celebration": [0, -1, -1], "medical": [0, -1, -1]},
+        "Payments":{"stocks": [0, -1, -1], "credit_card_payment": [0, -1, -1], "investments": [0, -1, -1]},
+        "Deposit":{"pay": [0, -1, -1], "bonus": [0, -1, -1], "tax_ret": [0, -1, -1], "others": [0, -1, -1]}
     }
 
     file_name = month + '_' + year + '.txt'
@@ -40,7 +62,24 @@ def generate_report(is_yearly_report, year, month):
         print(list_of_files)
         for files in list_of_files:
             if "limit" in files:
-                continue
+                yearly_limit_fname = year + '_limit.txt'
+                if yearly_limit_fname in files:
+                    limit_file_path = folder_path + '\\' + files
+                    limt_fh = open(limit_file_path, "r")
+                    for line in limt_fh:
+                        #print(line)
+                        line_space_split = line.split()
+                        #print(line_space_split)
+                        entry_val = []
+                        for entries in line_space_split:
+                            line_colon_split = entries.split(':')
+                            #print(line_colon_split)
+                            entry_val.append(line_colon_split[1].split('(')[0])
+                        #print(entry_val)
+                        report_dict[entry_val[0]][entry_val[1]][2] = int(entry_val[2])
+                    limt_fh.close()
+                else:
+                    continue
             else:
                 file_path = folder_path + '\\' + files
                 fh = open(file_path, "r")
@@ -54,7 +93,7 @@ def generate_report(is_yearly_report, year, month):
                         #print(line_colon_split)
                         entry_val.append(line_colon_split[1].split('(')[0])
                     #print(entry_val)
-                    report_dict[entry_val[0]][entry_val[1]] = report_dict[entry_val[0]][entry_val[1]] + int(entry_val[2])
+                    report_dict[entry_val[0]][entry_val[1]][0] = report_dict[entry_val[0]][entry_val[1]][0] + int(entry_val[2])
                 fh.close()
         is_print_report = True
     elif is_yearly_report == 'N' or is_yearly_report == 'n':
@@ -71,15 +110,32 @@ def generate_report(is_yearly_report, year, month):
                 #print(line_colon_split)
                 entry_val.append(line_colon_split[1].split('(')[0])
             #print(entry_val)
-            report_dict[entry_val[0]][entry_val[1]] = report_dict[entry_val[0]][entry_val[1]] + int(entry_val[2])
+            report_dict[entry_val[0]][entry_val[1]][0] = report_dict[entry_val[0]][entry_val[1]][0] + int(entry_val[2])
         fh.close()
+
+        monthly_limit_fname = month + '_' + year + '_limit.txt'
+        limit_file_path = folder_path + '\\' + monthly_limit_fname
+        if monthly_limit_fname in os.listdir(folder_path):
+            limt_fh = open(limit_file_path, "r")
+            for line in limt_fh:
+                #print(line)
+                line_space_split = line.split()
+                #print(line_space_split)
+                entry_val = []
+                for entries in line_space_split:
+                    line_colon_split = entries.split(':')
+                    #print(line_colon_split)
+                    entry_val.append(line_colon_split[1].split('(')[0])
+                    #print(entry_val)
+                report_dict[entry_val[0]][entry_val[1]][1] = int(entry_val[2])
+            limt_fh.close()
         is_print_report = True
     else:
         print("Invalid Input")
         is_print_report = False
 
     if is_print_report:
-        print_report(report_dict)
+        print_report(report_dict, is_yearly_report)
         
             
 
@@ -184,7 +240,7 @@ def get_entry_subtype(etype, esubtype):
             return 'others'
     return 'Invalid'
 
-def write_entry(etype, esubtype, val, detail = 'NA'):
+def write_entry(etype, esubtype, val, detail = 'NA', long_term_items = 'NA'):
     today = date.today()
     folder_name = today.strftime("%Y")
     file_name = today.strftime("%m_%Y")
@@ -207,17 +263,18 @@ def write_entry(etype, esubtype, val, detail = 'NA'):
         print("Folder Exist")
         file_path = folder_path + '\\' + file_name
         fh = open(file_path, "a+")
-        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s Date:%s LongTermItems:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail, today.strftime("%d_%m_%Y"), long_term_items))
         fh.close()
     else:
         os.mkdir(folder_path)
         print("Folder Created")
         file_path = folder_path + '\\' + file_name
         fh = open(file_path, "a+")
-        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s Date:%s LongTermItems:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail, today.strftime("%d_%m_%Y"), long_term_items))
         fh.close()
 
 def write_limit_entry(is_yearly_report, year, month, etype, esubtype, val, detail = 'NA'):
+    today = date.today()
     print("Write limit entries")
     file_name = '_limit.txt'
     folder_path = path + year + '_folder'
@@ -267,7 +324,7 @@ def write_limit_entry(is_yearly_report, year, month, etype, esubtype, val, detai
                     entry_found = True
                     break
                 index = index + 1
-            entry_string = "Type:{etn}({et}) SubType:{estn}({est}) Value:{v} Detail:{d}\n".format(etn = etype_name, et = etype, estn = esubtype_name, est = esubtype, v = val, d = detail)
+            entry_string = "Type:{etn}({et}) SubType:{estn}({est}) Value:{v} Detail:{d} Date:{da}\n".format(etn = etype_name, et = etype, estn = esubtype_name, est = esubtype, v = val, d = detail, da = today.strftime("%d_%m_%Y"))
             if entry_found:
                 list_of_lines[index] = entry_string
             else:
@@ -278,7 +335,7 @@ def write_limit_entry(is_yearly_report, year, month, etype, esubtype, val, detai
         else:
             print("Files does not Exist")
             fh = open(file_path, "a+")
-            fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail))
+            fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s Date:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail, today.strftime("%d_%m_%Y")))
             fh.close()
     else:
         print("Folder for limit does not exist. Create an entry for the year")
@@ -310,7 +367,12 @@ def main():
             entry_subtype = input("\nEnter Subtype: ")
             value = input("\nEnter Value: ")
             detail = input("\nEnter Comment: ")
-            write_entry(entry_type, entry_subtype, value, detail)
+            if detail == "":
+                detail = 'NA'
+            long_term_items = input("\nEnter long term items: ")
+            if long_term_items == "":
+                long_term_items = 'NA'
+            write_entry(entry_type, entry_subtype, value, detail, long_term_items)
         elif option == '3':
             is_yearly_report = input("\nNeed Yearly Report(Y/N)(y/n): ")
             report_year = input("\nEnter year: ")
@@ -326,6 +388,8 @@ def main():
             entry_subtype = input("\nEnter Subtype: ")
             value = input("\nEnter Value: ")
             detail = input("\nEnter Comment: ")
+            if detail == "":
+                detail = 'NA'
             write_limit_entry(is_yearly_limit, limit_year, limit_month, entry_type, entry_subtype, value, detail)
             
 

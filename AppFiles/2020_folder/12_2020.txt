@@ -36,3 +36,16 @@ Type:Misc(5) SubType:one_time(8) Value:119
 Type:Necessity(1) SubType:grocery_veggies(1) Value:29
 Type:Entertainment(2) SubType:food(1) Value:34
 Type:Misc(5) SubType:medical(10) Value:34 Detail:pregnancy_test
+Type:Necessity(1) SubType:bills(4) Value:65 Detail:pge_bill Date:31_12_2020 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:86 Detail:costco_grocery Date:31_12_2020 LongTermItems:rice_ghee_onion_potato
+Type:Necessity(1) SubType:grocery_meat(2) Value:14 Detail:costco_shrimp Date:31_12_2020 LongTermItems:shrimp
+Type:Entertainment(2) SubType:food(1) Value:12 Detail:costco_almond_chocolate Date:31_12_2020 LongTermItems:NA
+Type:Car(4) SubType:gas(3) Value:29 Detail:costco_gas_elantra Date:31_12_2020 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:15 Detail:chicken Date:31_12_2020 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:8 Detail:haliv_seeds Date:31_12_2020 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:30 Detail:indian_store Date:31_12_2020 LongTermItems:oil
+Type:Entertainment(2) SubType:food(1) Value:8 Detail:indian_store_biscuits Date:31_12_2020 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:44 Detail:uno_ElecKit_tray Date:31_12_2020 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:32 Detail:walmart_grocery Date:31_12_2020 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:14 Detail:sling Date:31_12_2020 LongTermItems:NA
+Type:Car(4) SubType:registration(4) Value:75 Detail:honda_registration_services Date:31_12_2020 LongTermItems:registration_doc_delivery
