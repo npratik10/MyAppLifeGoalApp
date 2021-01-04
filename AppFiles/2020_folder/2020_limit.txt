@@ -1,3 +1,6 @@
 Type:Misc(5) SubType:pitu_gift(6) Value:50 Detail:pitu_gift_limit
 Type:Misc(5) SubType:others_gift(7) Value:300 Detail:mom_gift
 Type:Misc(5) SubType:black_friday(3) Value:450 Detail:bfs
+Type:Vacation(3) SubType:food(5) Value:500 Detail:food Date:02_01_2021
+Type:Vacation(3) SubType:car_rent(2) Value:350 Detail:car_rent_insurance Date:02_01_2021
+Type:Vacation(3) SubType:gas(3) Value:50 Detail:gas Date:02_01_2021

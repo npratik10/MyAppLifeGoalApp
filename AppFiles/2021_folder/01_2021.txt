@@ -1,0 +1,5 @@
+Type:Misc(5) SubType:home_improve(2) Value:1298 Detail:king_mattress_pillow_cover Date:02_01_2021 LongTermItems:mattress_pillow
+Type:Deposit(7) SubType:others(4) Value:600 Detail:irs_stimulus Date:02_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:rent(3) Value:1607 Detail:rent_jan2021 Date:03_01_2021 LongTermItems:NA
+Type:Vacation(3) SubType:car_rent(2) Value:15 Detail:KU_car_used Date:03_01_2021 LongTermItems:NA
+Type:Vacation(3) SubType:food(5) Value:12 Detail:food_pancake_hotchoco Date:03_01_2021 LongTermItems:NA

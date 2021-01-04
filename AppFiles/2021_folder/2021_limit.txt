@@ -1,0 +1,17 @@
+Type:Misc(5) SubType:home_improve(2) Value:3500 Detail:increased_from_3000 Date:03_01_2021
+Type:Misc(5) SubType:others_gift(7) Value:1300 Detail:pri_par_mad_mum Date:02_01_2021
+Type:Misc(5) SubType:pitu_gift(6) Value:500 Detail:gift_reduced_from_600 Date:03_01_2021
+Type:Vacation(3) SubType:hotel(1) Value:1500 Detail:hotel_Stay Date:02_01_2021
+Type:Vacation(3) SubType:car_rent(2) Value:350 Detail:car_rent_insurance Date:02_01_2021
+Type:Vacation(3) SubType:gas(3) Value:50 Detail:gas Date:02_01_2021
+Type:Vacation(3) SubType:tickets(4) Value:1000 Detail:tickets_plane_park Date:02_01_2021
+Type:Payments(6) SubType:investments(3) Value:9000 Detail:house Date:02_01_2021
+Type:Payments(6) SubType:stocks(1) Value:1500 Detail:stocks_funds Date:02_01_2021
+Type:Vacation(3) SubType:food(5) Value:250 Detail:food Date:02_01_2021
+Type:Misc(5) SubType:makeup(1) Value:200 Detail:makeup Date:02_01_2021
+Type:Misc(5) SubType:clothes(4) Value:300 Detail:limit_reduced_from_500 Date:03_01_2021
+Type:Misc(5) SubType:black_friday(3) Value:400 Detail:reduced_from_500 Date:03_01_2021
+Type:Entertainment(2) SubType:food(1) Value:400 Detail:outside_food Date:02_01_2021
+Type:Entertainment(2) SubType:movies(2) Value:200 Detail:Reduced_from_300 Date:03_01_2021
+Type:Misc(5) SubType:celebration(9) Value:500 Detail:birthday_others Date:02_01_2021
+Type:Misc(5) SubType:one_time(8) Value:300 Detail:NA Date:02_01_2021
