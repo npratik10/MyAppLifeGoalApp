@@ -3,3 +3,14 @@ Type:Deposit(7) SubType:others(4) Value:600 Detail:irs_stimulus Date:02_01_2021 
 Type:Necessity(1) SubType:rent(3) Value:1607 Detail:rent_jan2021 Date:03_01_2021 LongTermItems:NA
 Type:Vacation(3) SubType:car_rent(2) Value:15 Detail:KU_car_used Date:03_01_2021 LongTermItems:NA
 Type:Vacation(3) SubType:food(5) Value:12 Detail:food_pancake_hotchoco Date:03_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:medical(10) Value:7 Detail:shatavari_indian_store Date:06_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:98 Detail:motley_fool_stock_suggestion Date:08_01_2021 LongTermItems:stocks_suggestion
+Type:Entertainment(2) SubType:video_stream(4) Value:18 Detail:netflix_india Date:08_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:29 Detail:citi_bank Date:08_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:5 Detail:NETFLIX Date:09_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1500 Detail:discover_bearmattress_prevdue Date:09_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:20 Detail:chicken Date:09_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:16 Detail:rusk_khakara_cake Date:09_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:35 Detail:indian_groceries_veggies Date:09_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:22 Detail:walmart_veggies Date:09_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:6 Detail:donation_teera Date:09_01_2021 LongTermItems:NA

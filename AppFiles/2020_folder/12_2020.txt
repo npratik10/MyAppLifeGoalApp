@@ -51,3 +51,6 @@ Type:Entertainment(2) SubType:video_stream(4) Value:14 Detail:sling Date:31_12_2
 Type:Car(4) SubType:registration(4) Value:75 Detail:honda_registration_services Date:31_12_2020 LongTermItems:registration_doc_delivery
 Type:Misc(5) SubType:one_time(8) Value:89 Detail:vlog_gimbal Date:31_12_2020 LongTermItems:NA
 Type:Necessity(1) SubType:grocery_veggies(1) Value:12 Detail:dabelimasala_pomegranete_ginger Date:31_12_2020 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1140 Detail:discover Date:31_12_2020 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:514 Detail:amex Date:31_12_2020 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:187 Detail:citi Date:31_12_2020 LongTermItems:NA

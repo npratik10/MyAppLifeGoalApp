@@ -15,3 +15,4 @@ Type:Entertainment(2) SubType:food(1) Value:400 Detail:outside_food Date:02_01_2
 Type:Entertainment(2) SubType:movies(2) Value:200 Detail:Reduced_from_300 Date:03_01_2021
 Type:Misc(5) SubType:celebration(9) Value:500 Detail:birthday_others Date:02_01_2021
 Type:Misc(5) SubType:one_time(8) Value:300 Detail:NA Date:02_01_2021
+Type:Misc(5) SubType:others(5) Value:200 Detail:others_spending Date:08_01_2021
