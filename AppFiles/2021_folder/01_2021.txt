@@ -16,3 +16,4 @@ Type:Necessity(1) SubType:grocery_veggies(1) Value:22 Detail:walmart_veggies Dat
 Type:Misc(5) SubType:one_time(8) Value:6 Detail:donation_teera Date:09_01_2021 LongTermItems:NA
 Type:Entertainment(2) SubType:food(1) Value:23 Detail:mountain_mikes_pizza Date:12_01_2021 LongTermItems:NA
 Type:Deposit(7) SubType:tax_ret(3) Value:3800 Detail:california_state_tax Date:12_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:2000 Detail:house_investment Date:13_01_2021 LongTermItems:NA

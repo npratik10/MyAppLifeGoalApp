@@ -18,12 +18,12 @@ def print_report(report_dict, is_yearly_report):
         for st in report_dict[t]:
             if is_yearly_report == 'Y' or is_yearly_report == 'y':
                 if report_dict[t][st][2] == -1:
-                    print(st + ' = %d, yearly limit = Not Set' % (report_dict[t][st][0]))
+                    print(st + ' = %d, yearly limit = Not Set, yearly assign = %d' % (report_dict[t][st][0], report_dict[t][st][3]))
                 else:
                     alert_string = ""
                     if report_dict[t][st][2] - report_dict[t][st][0] < approaching_yearly_limit_diff:
                         alert_string = ", ALERT : Approachin yearly limit: {diff}".format(diff = report_dict[t][st][2] - report_dict[t][st][0])
-                    print(st + ' = %d, yearly limit = %d%s' % (report_dict[t][st][0], report_dict[t][st][2], alert_string))
+                    print(st + ' = %d, yearly limit = %d, yearly assign = %d%s' % (report_dict[t][st][0], report_dict[t][st][2], report_dict[t][st][3], alert_string))
             else:
                 if report_dict[t][st][1] == -1:
                     print(st + ' = %d, monthly limit = Not Set' % (report_dict[t][st][0]))
@@ -36,18 +36,19 @@ def print_report(report_dict, is_yearly_report):
         print('Total %s: %d' % (t, total))
 
 def generate_report(is_yearly_report, year, month):
-    # [entry1, entry2, entry3]
+    # [entry1, entry2, entry3, entry4]
     # entry1 - entry value
     # entry2 - entry monthly report
     # entry3 - entry yearly report
+    # entry4 - entry assigned value
     report_dict = {
-        "Necessity":{"grocery_veggies": [0, -1, -1], "grocery_meat": [0, -1, -1], "rent": [0, -1, -1], "bills": [0, -1, -1], "one_time": [0, -1, -1]},
-        "Entertainment":{"food": [0, -1, -1], "movies": [0, -1, -1], "party": [0, -1, -1], "video_stream": [0, -1, -1], "others": [0, -1, -1]},
-        "Vacation":{"hotel": [0, -1, -1], "car_rent": [0, -1, -1], "gas": [0, -1, -1], "tickets": [0, -1, -1], "food": [0, -1, -1]},
-        "Car":{"maintainence": [0, -1, -1], "insurance": [0, -1, -1], "gas": [0, -1, -1], "registration": [0, -1, -1], "bills": [0, -1, -1]},
-        "Misc":{"makeup": [0, -1, -1], "home_improve": [0, -1, -1], "black_friday": [0, -1, -1], "clothes": [0, -1, -1], "others": [0, -1, -1], "pitu_gift": [0, -1, -1], "others_gift": [0, -1, -1], "one_time": [0, -1, -1], "celebration": [0, -1, -1], "medical": [0, -1, -1]},
-        "Payments":{"stocks": [0, -1, -1], "credit_card_payment": [0, -1, -1], "investments": [0, -1, -1]},
-        "Deposit":{"pay": [0, -1, -1], "bonus": [0, -1, -1], "tax_ret": [0, -1, -1], "others": [0, -1, -1]}
+        "Necessity":{"grocery_veggies": [0, -1, -1, 0], "grocery_meat": [0, -1, -1, 0], "rent": [0, -1, -1, 0], "bills": [0, -1, -1, 0], "one_time": [0, -1, -1, 0]},
+        "Entertainment":{"food": [0, -1, -1, 0], "movies": [0, -1, -1, 0], "party": [0, -1, -1, 0], "video_stream": [0, -1, -1, 0], "others": [0, -1, -1, 0]},
+        "Vacation":{"hotel": [0, -1, -1, 0], "car_rent": [0, -1, -1, 0], "gas": [0, -1, -1, 0], "tickets": [0, -1, -1, 0], "food": [0, -1, -1, 0]},
+        "Car":{"maintainence": [0, -1, -1, 0], "insurance": [0, -1, -1, 0], "gas": [0, -1, -1, 0], "registration": [0, -1, -1, 0], "bills": [0, -1, -1, 0]},
+        "Misc":{"makeup": [0, -1, -1, 0], "home_improve": [0, -1, -1, 0], "black_friday": [0, -1, -1, 0], "clothes": [0, -1, -1, 0], "others": [0, -1, -1, 0], "pitu_gift": [0, -1, -1, 0], "others_gift": [0, -1, -1, 0], "one_time": [0, -1, -1, 0], "celebration": [0, -1, -1, 0], "medical": [0, -1, -1, 0]},
+        "Payments":{"stocks": [0, -1, -1, 0], "credit_card_payment": [0, -1, -1, 0], "investments": [0, -1, -1, 0], "india_others": [0, -1, -1, 0]},
+        "Deposit":{"pay": [0, -1, -1, 0], "bonus": [0, -1, -1, 0], "tax_ret": [0, -1, -1, 0], "others": [0, -1, -1, 0], "savings": [0, -1, -1, 0]}
     }
 
     file_name = month + '_' + year + '.txt'
@@ -78,6 +79,25 @@ def generate_report(is_yearly_report, year, month):
                         #print(entry_val)
                         report_dict[entry_val[0]][entry_val[1]][2] = int(entry_val[2])
                     limt_fh.close()
+                else:
+                    continue
+            elif "assign" in files:
+                yearly_assign_fname = year + '_assign.txt'
+                if yearly_assign_fname in files:
+                    assign_file_path = folder_path + '\\' + files
+                    assign_fh = open(assign_file_path, "r")
+                    for line in assign_fh:
+                        #print(line)
+                        line_space_split = line.split()
+                        #print(line_space_split)
+                        entry_val = []
+                        for entries in line_space_split:
+                            line_colon_split = entries.split(':')
+                            #print(line_colon_split)
+                            entry_val.append(line_colon_split[1].split('(')[0])
+                        #print(entry_val)
+                        report_dict[entry_val[0]][entry_val[1]][3] = report_dict[entry_val[0]][entry_val[1]][3] + int(entry_val[2])
+                    assign_fh.close()
                 else:
                     continue
             else:
@@ -229,6 +249,8 @@ def get_entry_subtype(etype, esubtype):
             return 'credit_card_payment'
         elif esubtype == '3':
             return 'investments'
+        elif esubtype == '4':
+            return 'india_others'
     elif etype == '7':
         if esubtype == '1':
             return 'pay'
@@ -238,6 +260,8 @@ def get_entry_subtype(etype, esubtype):
             return 'tax_ret'
         elif esubtype == '4':
             return 'others'
+        elif esubtype == '5':
+            return 'savings'
     return 'Invalid'
 
 def write_entry(etype, esubtype, val, detail = 'NA', long_term_items = 'NA'):
@@ -339,16 +363,45 @@ def write_limit_entry(is_yearly_report, year, month, etype, esubtype, val, detai
             fh.close()
     else:
         print("Folder for limit does not exist. Create an entry for the year")
-    
 
+def write_assigned_value_entry(year, etype, esubtype, val, detail = 'NA'):
+    today = date.today()
+    print("Write assigned value entries")
+    file_name = year + '_assign.txt'
+    folder_path = path + year + '_folder'
+
+    etype_name = get_entry_type(etype)
+    if etype_name == 'Invalid':
+        print("\nInvalid Entry Name")
+        return
+    
+    esubtype_name = get_entry_subtype(etype, esubtype)
+    if esubtype_name == 'Invalid':
+        print("\nInvalid Subentry Name")
+        return
+
+    if os.path.isdir(folder_path):
+        print("Folder Exist")
+        file_path = folder_path + '\\' + file_name
+        fh = open(file_path, "a+")
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s Date:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail, today.strftime("%d_%m_%Y")))
+        fh.close()
+    else:
+        os.mkdir(folder_path)
+        print("Folder Created")
+        file_path = folder_path + '\\' + file_name
+        fh = open(file_path, "a+")
+        fh.write("Type:%s(%s) SubType:%s(%s) Value:%s Detail:%s Date:%s\n" % (etype_name, etype, esubtype_name, esubtype, val, detail, today.strftime("%d_%m_%Y")))
+        fh.close()
+    
 def print_entry_options():
     print('EntryType \n 1: Necessity \n {1: grocery_veggies, 2: grocery_meat, 3: rent, 4: bills, 5: one_time}')
     print('\n 2: Entertainment \n {1: food, 2: movies, 3: party, 4: video_stream, 5: others}')
     print('\n 3: Vacation \n {1: hotel, 2: car_rent, 3: gas, 4: tickets, 5: food}')
     print('\n 4: Car \n {1: maintainence, 2: insurance, 3: gas, 4: registration, 5: bills}')
     print('\n 5: Misc. \n {1: makeup, 2: home_improve, 3: black_friday, 4: clothes, 5: others, 6: pitu_gift, 7: others_gift, 8: one_time, 9: celebration, 10: medical}')
-    print('\n 6: Payments \n {1: stocks, 2: credit_card_payment, 3: investments}')
-    print('\n 7: Deposit \n {1: pay, 2: bonus, 3: tax_ret, 4: others}')
+    print('\n 6: Payments \n {1: stocks, 2: credit_card_payment, 3: investments, 4: india_others}')
+    print('\n 7: Deposit \n {1: pay, 2: bonus, 3: tax_ret, 4: others, 5: savings}')
 
 def main():
     #acnt1 = spend.spending('pratik_household')
@@ -356,7 +409,7 @@ def main():
     #acnt1.add_entry("necessity", "rent", 1600)
     #acnt1.get_value("necessity", "rent")
     while 1:
-        print('1: EXIT, 2: ENTRY, 3: GENERATE_REPORT, 4: SET_LIMIT')
+        print('1: EXIT, 2: ENTRY, 3: GENERATE_REPORT, 4: SET_LIMIT 5:SET_ASSIGNED_MONEY')
         option = input("Enter option: ")
         
         if option == '1':
@@ -391,7 +444,17 @@ def main():
             if detail == "":
                 detail = 'NA'
             write_limit_entry(is_yearly_limit, limit_year, limit_month, entry_type, entry_subtype, value, detail)
-            
+        elif option == '5':
+            assign_year = input("\nEnter year: ")
+            print("\nSelect the entry to set the assigned money:")
+            print_entry_options()
+            entry_type = input("\nEnter Type: ")
+            entry_subtype = input("\nEnter Subtype: ")
+            value = input("\nEnter Value: ")
+            detail = input("\nEnter Comment: ")
+            if detail == "":
+                detail = 'NA'
+            write_assigned_value_entry(assign_year, entry_type, entry_subtype, value, detail)
 
 '''
 1) load profile for 3 year
