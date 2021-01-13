@@ -14,3 +14,5 @@ Type:Entertainment(2) SubType:food(1) Value:16 Detail:rusk_khakara_cake Date:09_
 Type:Necessity(1) SubType:grocery_veggies(1) Value:35 Detail:indian_groceries_veggies Date:09_01_2021 LongTermItems:NA
 Type:Necessity(1) SubType:grocery_veggies(1) Value:22 Detail:walmart_veggies Date:09_01_2021 LongTermItems:NA
 Type:Misc(5) SubType:one_time(8) Value:6 Detail:donation_teera Date:09_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:23 Detail:mountain_mikes_pizza Date:12_01_2021 LongTermItems:NA
+Type:Deposit(7) SubType:tax_ret(3) Value:3800 Detail:california_state_tax Date:12_01_2021 LongTermItems:NA
