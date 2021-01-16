@@ -9,4 +9,7 @@ Type:Vacation(3) SubType:car_rent(2) Value:200 Detail:car_rental_to_travel Date:
 Type:Vacation(3) SubType:tickets(4) Value:400 Detail:tickets_for_entertainment Date:13_01_2021
 Type:Vacation(3) SubType:food(5) Value:200 Detail:food_during_travel Date:13_01_2021
 Type:Deposit(7) SubType:savings(5) Value:15000 Detail:for_amex_high_yield_saving Date:13_01_2021
-Type:Payments(6) SubType:india_others(4) Value:1500 Detail:parents_travel Date:13_01_2021
+Type:Payments(6) SubType:india_others(4) Value:1000 Detail:parents_travel Date:13_01_2021
+Type:Misc(5) SubType:pitu_gift(6) Value:500 Detail:pitu_initial_gift_assign Date:16_01_2021
+Type:Payments(6) SubType:credit_card_payment(2) Value:400 Detail:amex_discover_payments Date:16_01_2021
+Type:Payments(6) SubType:investments(3) Value:1500 Detail:house_payment_jan2021 Date:16_01_2021

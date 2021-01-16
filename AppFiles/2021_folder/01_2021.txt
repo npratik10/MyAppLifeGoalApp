@@ -17,3 +17,13 @@ Type:Misc(5) SubType:one_time(8) Value:6 Detail:donation_teera Date:09_01_2021 L
 Type:Entertainment(2) SubType:food(1) Value:23 Detail:mountain_mikes_pizza Date:12_01_2021 LongTermItems:NA
 Type:Deposit(7) SubType:tax_ret(3) Value:3800 Detail:california_state_tax Date:12_01_2021 LongTermItems:NA
 Type:Payments(6) SubType:investments(3) Value:2000 Detail:house_investment Date:13_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:58 Detail:smud_bill Date:14_01_2021 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:2570 Detail:intel_pay_jan Date:16_01_2021 LongTermItems:NA
+Type:Car(4) SubType:insurance(2) Value:109 Detail:car_insurance_jan2021 Date:16_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:72 Detail:comcast_internet_bill_jan2021 Date:16_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:9 Detail:walmart_milk_tomato_bread Date:16_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:10 Detail:pitu_paints Date:16_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:10 Detail:indian_store_panipuri_maggi Date:16_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:8 Detail:frozen_samosa Date:16_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:800 Detail:house_invest_jan2021 Date:16_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:india_others(4) Value:700 Detail:parents_travel_money Date:16_01_2021 LongTermItems:NA
