@@ -27,3 +27,8 @@ Type:Necessity(1) SubType:grocery_veggies(1) Value:10 Detail:indian_store_panipu
 Type:Entertainment(2) SubType:food(1) Value:8 Detail:frozen_samosa Date:16_01_2021 LongTermItems:NA
 Type:Payments(6) SubType:investments(3) Value:800 Detail:house_invest_jan2021 Date:16_01_2021 LongTermItems:NA
 Type:Payments(6) SubType:india_others(4) Value:700 Detail:parents_travel_money Date:16_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:140 Detail:house_rental_insurance_new_house Date:16_01_2021 LongTermItems:yearly_2021
+Type:Misc(5) SubType:one_time(8) Value:119 Detail:karoake_machine Date:16_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:52 Detail:dollor_tree Date:20_01_2021 LongTermItems:NA
+Type:Payments(6) SubType:stocks(1) Value:500 Detail:robinhood_stocks Date:20_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:48 Detail:tmobile_bill_dec2020 Date:21_01_2021 LongTermItems:NA
