@@ -37,3 +37,4 @@ Type:Entertainment(2) SubType:food(1) Value:18 Detail:ice_cream_hotchoc Date:23_
 Type:Entertainment(2) SubType:food(1) Value:32 Detail:sanskrit_rest Date:24_01_2021 LongTermItems:NA
 Type:Entertainment(2) SubType:food(1) Value:19 Detail:sanskrit_vadapav Date:25_01_2021 LongTermItems:NA
 Type:Necessity(1) SubType:grocery_veggies(1) Value:17 Detail:bread_milk Date:26_01_2021 LongTermItems:NA
+Type:Deposit(7) SubType:bonus(2) Value:1386 Detail:qpb_4th_2020 Date:26_01_2021 LongTermItems:NA
