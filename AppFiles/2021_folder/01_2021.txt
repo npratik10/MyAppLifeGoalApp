@@ -32,3 +32,8 @@ Type:Misc(5) SubType:one_time(8) Value:119 Detail:karoake_machine Date:16_01_202
 Type:Misc(5) SubType:home_improve(2) Value:52 Detail:dollor_tree Date:20_01_2021 LongTermItems:NA
 Type:Payments(6) SubType:stocks(1) Value:500 Detail:robinhood_stocks Date:20_01_2021 LongTermItems:NA
 Type:Necessity(1) SubType:bills(4) Value:48 Detail:tmobile_bill_dec2020 Date:21_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:3 Detail:usps_coa_applepay Date:22_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:18 Detail:ice_cream_hotchoc Date:23_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:32 Detail:sanskrit_rest Date:24_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:19 Detail:sanskrit_vadapav Date:25_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:17 Detail:bread_milk Date:26_01_2021 LongTermItems:NA
