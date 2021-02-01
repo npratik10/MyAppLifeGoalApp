@@ -1,0 +1,3 @@
+Type:Necessity(1) SubType:rent(3) Value:2449 Detail:Feb_rent_jan27_31 Date:01_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:102 Detail:pitu_budget_hme_improve Date:01_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:77 Detail:pge_bill Date:01_02_2021 LongTermItems:NA
