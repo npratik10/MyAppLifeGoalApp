@@ -13,3 +13,5 @@ Type:Payments(6) SubType:india_others(4) Value:1000 Detail:parents_travel Date:1
 Type:Misc(5) SubType:pitu_gift(6) Value:500 Detail:pitu_initial_gift_assign Date:16_01_2021
 Type:Payments(6) SubType:credit_card_payment(2) Value:400 Detail:amex_discover_payments Date:16_01_2021
 Type:Payments(6) SubType:investments(3) Value:1500 Detail:house_payment_jan2021 Date:16_01_2021
+Type:Misc(5) SubType:home_improve(2) Value:20 Detail:remaining_from_shifting Date:31_01_2021
+Type:Misc(5) SubType:home_improve(2) Value:14 Detail:pitu_home_decor Date:31_01_2021

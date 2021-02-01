@@ -38,3 +38,17 @@ Type:Entertainment(2) SubType:food(1) Value:32 Detail:sanskrit_rest Date:24_01_2
 Type:Entertainment(2) SubType:food(1) Value:19 Detail:sanskrit_vadapav Date:25_01_2021 LongTermItems:NA
 Type:Necessity(1) SubType:grocery_veggies(1) Value:17 Detail:bread_milk Date:26_01_2021 LongTermItems:NA
 Type:Deposit(7) SubType:bonus(2) Value:1386 Detail:qpb_4th_2020 Date:26_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:19 Detail:sanskrit_vadapav Date:31_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:23 Detail:dominos_pizza Date:31_01_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:16 Detail:sanskrit_vadapav Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:medical(10) Value:37 Detail:walgreens_sprains_pain Date:31_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:32 Detail:walmart_indian_store Date:31_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:9 Detail:chicken Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:378 Detail:home_shifting Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:603 Detail:ashley_furniture_kings_bed Date:31_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:7 Detail:walmart_veggies Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:clothes(4) Value:22 Detail:pitu_pratik_slippers Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:28 Detail:king_bedsheet_half Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:214 Detail:walmart_home_decor Date:31_01_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:18 Detail:vase_world_furniture Date:31_01_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:70 Detail:utility_bill_legends Date:31_01_2021 LongTermItems:NA
