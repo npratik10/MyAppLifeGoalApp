@@ -52,3 +52,4 @@ Type:Misc(5) SubType:others(5) Value:28 Detail:king_bedsheet_half Date:31_01_202
 Type:Misc(5) SubType:home_improve(2) Value:214 Detail:walmart_home_decor Date:31_01_2021 LongTermItems:NA
 Type:Misc(5) SubType:home_improve(2) Value:18 Detail:vase_world_furniture Date:31_01_2021 LongTermItems:NA
 Type:Necessity(1) SubType:bills(4) Value:70 Detail:utility_bill_legends Date:31_01_2021 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:2570 Detail:intel_pay_jan Date:31_01_2021 LongTermItems:NA

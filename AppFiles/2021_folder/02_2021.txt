@@ -1,3 +1,17 @@
 Type:Necessity(1) SubType:rent(3) Value:2449 Detail:Feb_rent_jan27_31 Date:01_02_2021 LongTermItems:NA
 Type:Misc(5) SubType:home_improve(2) Value:102 Detail:pitu_budget_hme_improve Date:01_02_2021 LongTermItems:NA
 Type:Necessity(1) SubType:bills(4) Value:77 Detail:pge_bill Date:01_02_2021 LongTermItems:NA
+Type:Deposit(7) SubType:bonus(2) Value:1623 Detail:annual_2020_perf_bonus Date:02_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1362 Detail:amex_payment Date:02_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:600 Detail:house_invest_feb2021 Date:02_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:india_others(4) Value:400 Detail:parent_travel_money Date:02_02_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:16 Detail:sanskrit_vada_pav Date:04_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:pitu_gift(6) Value:148 Detail:ring_perfume Date:04_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:36 Detail:indian_store_tava Date:06_02_2021 LongTermItems:tava
+Type:Necessity(1) SubType:grocery_veggies(1) Value:84 Detail:indian_store_veggies Date:06_02_2021 LongTermItems:wheatflour_rice_beans_jaggery_yogurt
+Type:Car(4) SubType:gas(3) Value:29 Detail:honda_fuel Date:06_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:15 Detail:hanger_hooks Date:06_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:75 Detail:costco_veggies Date:06_02_2021 LongTermItems:onions_potatoes_eggs_lemons_apple_melon_mangoes
+Type:Necessity(1) SubType:grocery_veggies(1) Value:18 Detail:walmart_veggies Date:06_02_2021 LongTermItems:milk_tomatoes_veggies_pav
+Type:Necessity(1) SubType:grocery_meat(2) Value:33 Detail:fish_pomfret_pompana_shrimps Date:07_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:10 Detail:dollar_tree Date:07_02_2021 LongTermItems:NA
