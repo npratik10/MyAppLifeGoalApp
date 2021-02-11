@@ -15,3 +15,12 @@ Type:Necessity(1) SubType:grocery_veggies(1) Value:75 Detail:costco_veggies Date
 Type:Necessity(1) SubType:grocery_veggies(1) Value:18 Detail:walmart_veggies Date:06_02_2021 LongTermItems:milk_tomatoes_veggies_pav
 Type:Necessity(1) SubType:grocery_meat(2) Value:33 Detail:fish_pomfret_pompana_shrimps Date:07_02_2021 LongTermItems:NA
 Type:Misc(5) SubType:home_improve(2) Value:10 Detail:dollar_tree Date:07_02_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:5 Detail:netflix_streaming_feb Date:07_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1127 Detail:discover_payment Date:08_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:4 Detail:fedex_prints Date:09_02_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:18 Detail:netflix_india Date:09_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:151 Detail:citi_payment Date:11_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:59 Detail:smud_bill_feb Date:11_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:tickets(4) Value:16 Detail:mystery_spot_feb Date:11_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:hotel(1) Value:368 Detail:hotel_holidayinn_santa_cruz Date:11_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:10 Detail:tip_ashley_furniture Date:11_02_2021 LongTermItems:NA
