@@ -44,7 +44,7 @@ def generate_report(is_yearly_report, year, month):
     report_dict = {
         "Necessity":{"grocery_veggies": [0, -1, -1, 0], "grocery_meat": [0, -1, -1, 0], "rent": [0, -1, -1, 0], "bills": [0, -1, -1, 0], "one_time": [0, -1, -1, 0]},
         "Entertainment":{"food": [0, -1, -1, 0], "movies": [0, -1, -1, 0], "party": [0, -1, -1, 0], "video_stream": [0, -1, -1, 0], "others": [0, -1, -1, 0]},
-        "Vacation":{"hotel": [0, -1, -1, 0], "car_rent": [0, -1, -1, 0], "gas": [0, -1, -1, 0], "tickets": [0, -1, -1, 0], "food": [0, -1, -1, 0]},
+        "Vacation":{"hotel": [0, -1, -1, 0], "car_rent": [0, -1, -1, 0], "gas": [0, -1, -1, 0], "tickets": [0, -1, -1, 0], "food": [0, -1, -1, 0], "others": [0, -1, -1, 0]},
         "Car":{"maintainence": [0, -1, -1, 0], "insurance": [0, -1, -1, 0], "gas": [0, -1, -1, 0], "registration": [0, -1, -1, 0], "bills": [0, -1, -1, 0]},
         "Misc":{"makeup": [0, -1, -1, 0], "home_improve": [0, -1, -1, 0], "black_friday": [0, -1, -1, 0], "clothes": [0, -1, -1, 0], "others": [0, -1, -1, 0], "pitu_gift": [0, -1, -1, 0], "others_gift": [0, -1, -1, 0], "one_time": [0, -1, -1, 0], "celebration": [0, -1, -1, 0], "medical": [0, -1, -1, 0]},
         "Payments":{"stocks": [0, -1, -1, 0], "credit_card_payment": [0, -1, -1, 0], "investments": [0, -1, -1, 0], "india_others": [0, -1, -1, 0]},
@@ -210,6 +210,8 @@ def get_entry_subtype(etype, esubtype):
             return 'tickets'
         elif esubtype == '5':
             return 'food'
+        elif esubtype == '6':
+            return 'others'
     elif etype == '4':
         if esubtype == '1':
             return 'maintainence'
@@ -397,7 +399,7 @@ def write_assigned_value_entry(year, etype, esubtype, val, detail = 'NA'):
 def print_entry_options():
     print('EntryType \n 1: Necessity \n {1: grocery_veggies, 2: grocery_meat, 3: rent, 4: bills, 5: one_time}')
     print('\n 2: Entertainment \n {1: food, 2: movies, 3: party, 4: video_stream, 5: others}')
-    print('\n 3: Vacation \n {1: hotel, 2: car_rent, 3: gas, 4: tickets, 5: food}')
+    print('\n 3: Vacation \n {1: hotel, 2: car_rent, 3: gas, 4: tickets, 5: food. 6: others}')
     print('\n 4: Car \n {1: maintainence, 2: insurance, 3: gas, 4: registration, 5: bills}')
     print('\n 5: Misc. \n {1: makeup, 2: home_improve, 3: black_friday, 4: clothes, 5: others, 6: pitu_gift, 7: others_gift, 8: one_time, 9: celebration, 10: medical}')
     print('\n 6: Payments \n {1: stocks, 2: credit_card_payment, 3: investments, 4: india_others}')

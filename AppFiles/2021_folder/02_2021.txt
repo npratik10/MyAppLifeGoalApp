@@ -24,3 +24,14 @@ Type:Necessity(1) SubType:bills(4) Value:59 Detail:smud_bill_feb Date:11_02_2021
 Type:Vacation(3) SubType:tickets(4) Value:16 Detail:mystery_spot_feb Date:11_02_2021 LongTermItems:NA
 Type:Vacation(3) SubType:hotel(1) Value:368 Detail:hotel_holidayinn_santa_cruz Date:11_02_2021 LongTermItems:NA
 Type:Misc(5) SubType:one_time(8) Value:10 Detail:tip_ashley_furniture Date:11_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:celebration(9) Value:16 Detail:pitu_bday_pastry_ballons Date:13_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:food(5) Value:19 Detail:walmart_food_travel Date:13_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:food(5) Value:42 Detail:pakwaan_coffee_pastry Date:16_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:tickets(4) Value:24 Detail:parking_tickets_7hotel_5boardwalk_5mysteryspot Date:16_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:others(6) Value:10 Detail:mystery_spot_momento Date:16_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:gas(3) Value:38 Detail:gas_for_travel_santacruztrip Date:16_02_2021 LongTermItems:NA
+Type:Vacation(3) SubType:food(5) Value:11 Detail:ice_cream_santacruz Date:16_02_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:10 Detail:pastry Date:16_02_2021 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:2571 Detail:intel_pay Date:16_02_2021 LongTermItems:NA
+Type:Car(4) SubType:insurance(2) Value:111 Detail:car_insurance_feb21 Date:16_02_2021 LongTermItems:NA
+Type:Car(4) SubType:bills(5) Value:400 Detail:car_payment_feb Date:16_02_2021 LongTermItems:NA
