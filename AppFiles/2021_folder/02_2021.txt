@@ -35,3 +35,16 @@ Type:Entertainment(2) SubType:food(1) Value:10 Detail:pastry Date:16_02_2021 Lon
 Type:Deposit(7) SubType:pay(1) Value:2571 Detail:intel_pay Date:16_02_2021 LongTermItems:NA
 Type:Car(4) SubType:insurance(2) Value:111 Detail:car_insurance_feb21 Date:16_02_2021 LongTermItems:NA
 Type:Car(4) SubType:bills(5) Value:400 Detail:car_payment_feb Date:16_02_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:1000 Detail:house_invest_feb2021 Date:17_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:58 Detail:at&t_bill_feb Date:19_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:48 Detail:tmobile_bill_jan2021 Date:19_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:celebration(9) Value:51 Detail:pitu_bday_celebration Date:19_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:12 Detail:walmart_indian_store Date:19_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:makeup(1) Value:17 Detail:cetaphil_aloejuice Date:19_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:40 Detail:treadmill_mat Date:20_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:makeup(1) Value:4 Detail:witch_hazel Date:20_02_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:982 Detail:treadmill645_maintainence120_delivery135_tax_lubricant15 Date:20_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:20 Detail:comcast_bill_25jan_31jan Date:20_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:15 Detail:goat_meat Date:20_02_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:19 Detail:dominos_pizza Date:27_02_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:14 Detail:chicken Date:27_02_2021 LongTermItems:NA

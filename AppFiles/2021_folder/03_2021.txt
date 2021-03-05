@@ -1,0 +1,13 @@
+Type:Necessity(1) SubType:rent(3) Value:2100 Detail:rent_feb21 Date:02_03_2021 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:2571 Detail:pay_jan21 Date:02_03_2021 LongTermItems:NA
+Type:Misc(5) SubType:makeup(1) Value:14 Detail:sunscreen_cream_costco Date:04_03_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:49 Detail:costco_veggies Date:04_03_2021 LongTermItems:onion_fruits_veggies
+Type:Necessity(1) SubType:grocery_veggies(1) Value:13 Detail:walmart_veggies Date:04_03_2021 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:34 Detail:walmart_hangers4_storage8_closetorg12_meshbin9 Date:04_03_2021 LongTermItems:NA
+Type:Misc(5) SubType:medical(10) Value:10 Detail:jelly_medical Date:04_03_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:30 Detail:indian_store_veggies Date:04_03_2021 LongTermItems:soap_veggies
+Type:Necessity(1) SubType:one_time(5) Value:201 Detail:legends_apt_due Date:04_03_2021 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:36 Detail:smud_bill Date:04_03_2021 LongTermItems:NA
+Type:Misc(5) SubType:pitu_gift(6) Value:40 Detail:kohl_shoes Date:04_03_2021 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:2607 Detail:intel_pay_jan31 Date:04_03_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:4200 Detail:house_invest_mar21 Date:04_03_2021 LongTermItems:NA
