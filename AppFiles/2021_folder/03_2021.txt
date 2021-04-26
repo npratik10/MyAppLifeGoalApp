@@ -62,3 +62,5 @@ Type:Misc(5) SubType:others(5) Value:22 Detail:water_filter_pur Date:29_03_2021 
 Type:Necessity(1) SubType:grocery_veggies(1) Value:60 Detail:indian_store_veggies Date:29_03_2021 LongTermItems:thandai_biscuit_dhoop
 Type:Necessity(1) SubType:grocery_veggies(1) Value:117 Detail:veggies_costco Date:29_03_2021 LongTermItems:onions_potato_eggs_proteinbar_avocado_fruits_darkchocolate
 Type:Misc(5) SubType:others(5) Value:43 Detail:portable_vacuum_cleaner Date:29_03_2021 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:46 Detail:portable_vacuum_cleaner_amazongiftcard Date:29_03_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:27 Detail:halimseeds_perperimasala Date:29_03_2021 LongTermItems:NA
