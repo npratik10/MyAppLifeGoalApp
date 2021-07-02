@@ -1,0 +1,1 @@
+Type:Necessity(1) SubType:rent(3) Value:2100 Detail:house_rent_july21 Date:02_07_2021 LongTermItems:NA
