@@ -1,0 +1,5 @@
+Type:Necessity(1) SubType:rent(3) Value:2100 Detail:aug_rent_2021 Date:02_08_2021 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:14 Detail:walmart_veggies Date:02_08_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:18 Detail:panda_express_pastry Date:02_08_2021 LongTermItems:NA
+Type:Misc(5) SubType:one_time(8) Value:92 Detail:fedex_cheques Date:02_08_2021 LongTermItems:NA
+Type:Misc(5) SubType:others_gift(7) Value:125 Detail:shein_order Date:02_08_2021 LongTermItems:NA
