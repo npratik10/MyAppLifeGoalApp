@@ -49,3 +49,5 @@ Type:Car(4) SubType:bills(5) Value:400 Detail:honda_car_bill Date:27_10_2021 Lon
 Type:Deposit(7) SubType:pay(1) Value:4328 Detail:intel_pay_bonus Date:27_10_2021 LongTermItems:NA
 Type:Payments(6) SubType:india_others(4) Value:2000 Detail:parent_travel Date:27_10_2021 LongTermItems:NA
 Type:Payments(6) SubType:investments(3) Value:2000 Detail:house_payment_india Date:27_10_2021 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:5 Detail:hbo_max Date:27_10_2021 LongTermItems:NA
+Type:Deposit(7) SubType:others(4) Value:4386 Detail:stocks Date:27_10_2021 LongTermItems:NA
