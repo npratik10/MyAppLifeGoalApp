@@ -48,3 +48,9 @@ Type:Car(4) SubType:bills(5) Value:400 Detail:honda_bills Date:12_11_2021 LongTe
 Type:Payments(6) SubType:credit_card_payment(2) Value:2300 Detail:amex_payment Date:12_11_2021 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:830 Detail:discover Date:12_11_2021 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:250 Detail:citibank_pay Date:12_11_2021 LongTermItems:NA
+Type:Vacation(3) SubType:others(6) Value:4 Detail:fedex_prints Date:13_11_2021 LongTermItems:NA
+Type:Vacation(3) SubType:others(6) Value:37 Detail:car_wash Date:13_11_2021 LongTermItems:NA
+Type:Vacation(3) SubType:gas(3) Value:44 Detail:costco_gas Date:13_11_2021 LongTermItems:NA
+Type:Vacation(3) SubType:food(5) Value:15 Detail:walmart_target_food Date:13_11_2021 LongTermItems:NA
+Type:Vacation(3) SubType:others(6) Value:9 Detail:sanitary_things Date:13_11_2021 LongTermItems:NA
+Type:Misc(5) SubType:medical(10) Value:7 Detail:hand_sanitizer Date:13_11_2021 LongTermItems:NA
