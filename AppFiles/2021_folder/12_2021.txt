@@ -54,3 +54,4 @@ Type:Necessity(1) SubType:grocery_veggies(1) Value:75 Detail:indian_store_malaba
 Type:Entertainment(2) SubType:food(1) Value:20 Detail:chaat_paradise Date:30_12_2021 LongTermItems:NA
 Type:Misc(5) SubType:others(5) Value:39 Detail:courseera Date:30_12_2021 LongTermItems:NA
 Type:Misc(5) SubType:others(5) Value:14 Detail:home_depot_butane_gas Date:30_12_2021 LongTermItems:NA
+Type:Payments(6) SubType:investments(3) Value:400 Detail:fidelity_funds Date:30_12_2021 LongTermItems:NA
