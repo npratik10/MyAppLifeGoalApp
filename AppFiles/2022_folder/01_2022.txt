@@ -54,3 +54,7 @@ Type:Deposit(7) SubType:pay(1) Value:5747 Detail:intel_pay Date:28_01_2022 LongT
 Type:Entertainment(2) SubType:video_stream(4) Value:30 Detail:youtube_red Date:28_01_2022 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:600 Detail:citibank_payment Date:28_01_2022 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:900 Detail:discover Date:28_01_2022 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:41 Detail:bath_filter_amazon Date:29_01_2022 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:6 Detail:target_yogurt Date:29_01_2022 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:126 Detail:pge_bill Date:29_01_2022 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:3000 Detail:amex_payment Date:29_01_2022 LongTermItems:NA
