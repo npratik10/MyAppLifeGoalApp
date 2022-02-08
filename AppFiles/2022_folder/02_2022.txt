@@ -18,3 +18,8 @@ Type:Misc(5) SubType:others(5) Value:10 Detail:patreon Date:07_02_2022 LongTermI
 Type:Necessity(1) SubType:grocery_veggies(1) Value:29 Detail:indian_store_atta Date:07_02_2022 LongTermItems:NA
 Type:Necessity(1) SubType:grocery_veggies(1) Value:17 Detail:indian_store_ghee Date:07_02_2022 LongTermItems:NA
 Type:Payments(6) SubType:india_others(4) Value:970 Detail:parents_insurance Date:07_02_2022 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:11 Detail:knife Date:07_02_2022 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:17 Detail:shampoo Date:07_02_2022 LongTermItems:NA
+Type:Misc(5) SubType:clothes(4) Value:50 Detail:walmart_clothes_pitu Date:07_02_2022 LongTermItems:NA
+Type:Misc(5) SubType:home_improve(2) Value:39 Detail:walmart_family_home_objects Date:07_02_2022 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:30 Detail:citibank Date:07_02_2022 LongTermItems:NA
