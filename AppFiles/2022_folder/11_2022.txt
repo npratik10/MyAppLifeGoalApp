@@ -52,3 +52,4 @@ Type:Car(4) SubType:maintainence(1) Value:62 Detail:folsom_honda_key_phoneholder
 Type:Payments(6) SubType:credit_card_payment(2) Value:1550 Detail:amex_nov22 Date:26_11_2022 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:1300 Detail:discover_nov22 Date:26_11_2022 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:500 Detail:citibank_nov22 Date:26_11_2022 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_meat(2) Value:16 Detail:chicken_nov22 Date:27_11_2022 LongTermItems:NA
