@@ -49,3 +49,7 @@ Type:Car(4) SubType:bills(5) Value:400 Detail:car_monthly_jan23 Date:31_01_2023 
 Type:Payments(6) SubType:india_others(4) Value:2500 Detail:india_investment_23jan23 Date:31_01_2023 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:900 Detail:amex_payment_31jan23 Date:31_01_2023 LongTermItems:NA
 Type:Payments(6) SubType:credit_card_payment(2) Value:500 Detail:discover_pay_31jan23 Date:31_01_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:25 Detail:chipotle_party_games_nyt_jan23 Date:31_01_2023 LongTermItems:NA
+Type:Vacation(3) SubType:gas(3) Value:17 Detail:fuel_tahoe_jan23 Date:31_01_2023 LongTermItems:NA
+Type:Vacation(3) SubType:tickets(4) Value:22 Detail:snowpark_tahoe_jan23 Date:31_01_2023 LongTermItems:NA
+Type:Necessity(1) SubType:one_time(5) Value:60 Detail:costco_yearly_membership_2023 Date:31_01_2023 LongTermItems:NA
