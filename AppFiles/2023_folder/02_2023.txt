@@ -1,0 +1,9 @@
+Type:Necessity(1) SubType:rent(3) Value:2338 Detail:rent_feb23 Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:304 Detail:all_bills Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:187 Detail:restaurants Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:372 Detail:walmart_other_grocery Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:100 Detail:other_merchandise Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:bills(5) Value:400 Detail:car_monthly Date:28_12_2023 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:12228 Detail:payment_feb23 Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:135 Detail:netflix_hbo_iptv Date:28_12_2023 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1500 Detail:credit_card_payment Date:28_12_2023 LongTermItems:NA

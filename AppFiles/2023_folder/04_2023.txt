@@ -1,0 +1,17 @@
+Type:Necessity(1) SubType:rent(3) Value:2338 Detail:rent_apr23 Date:28_12_2023 LongTermItems:NA
+Type:Deposit(7) SubType:tax_ret(3) Value:6721 Detail:tax_ret23 Date:28_12_2023 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:6870 Detail:intel_pay_apr23 Date:28_12_2023 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:2450 Detail:credit_card_payment_apr23 Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:56 Detail:costco_apr23 Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:bills(5) Value:400 Detail:car_payment_apr23 Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:620 Detail:transcript_service_ninu Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:71 Detail:others_cost Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:186 Detail:bills_att_smud_tmobile Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:458 Detail:walmart_indianstore_others Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:gas(3) Value:108 Detail:gas Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:gas(3) Value:50 Detail:gas Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:maintainence(1) Value:22 Detail:carwash Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:251 Detail:restaurants Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:insurance(2) Value:115 Detail:geico Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:7 Detail:others Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:20 Detail:netflix_hbo_prime Date:28_12_2023 LongTermItems:NA

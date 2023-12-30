@@ -1,0 +1,14 @@
+Type:Necessity(1) SubType:rent(3) Value:2338 Detail:rent_mar23 Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:bills(4) Value:448 Detail:all_bills_smud_pge_tmobile_att Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:516 Detail:walmart_indianstore Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:387 Detail:other_merch Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:insurance(2) Value:115 Detail:insurance Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:food(1) Value:136 Detail:restaurant Date:28_12_2023 LongTermItems:NA
+Type:Entertainment(2) SubType:video_stream(4) Value:20 Detail:netflix_hbo_prime Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:gas(3) Value:30 Detail:gas Date:28_12_2023 LongTermItems:NA
+Type:Misc(5) SubType:others(5) Value:26 Detail:other_charges Date:28_12_2023 LongTermItems:NA
+Type:Payments(6) SubType:credit_card_payment(2) Value:1935 Detail:discover_amex_mar23 Date:28_12_2023 LongTermItems:NA
+Type:Necessity(1) SubType:grocery_veggies(1) Value:89 Detail:costco_mar23 Date:28_12_2023 LongTermItems:NA
+Type:Deposit(7) SubType:pay(1) Value:6842 Detail:intel_mar23 Date:28_12_2023 LongTermItems:NA
+Type:Car(4) SubType:bills(5) Value:400 Detail:car_bill Date:28_12_2023 LongTermItems:NA
+Type:Payments(6) SubType:india_others(4) Value:2500 Detail:house_india Date:28_12_2023 LongTermItems:NA
